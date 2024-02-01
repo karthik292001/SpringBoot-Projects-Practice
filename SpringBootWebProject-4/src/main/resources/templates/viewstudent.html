@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>Student Table</h1>
+
+	<table border="2">
+		
+		<tr>
+			<th>Roll NO</th>
+			<th>Name</th>
+			<th>Marks</th>
+		</tr>
+		
+		<tr th:each="student:${students}">
+		
+			<td th:text="${student.roll}"></td>
+			<td th:text="${student.name}"></td>
+			<td th:text="${student.marks}"></td>
+		
+		</tr>
+		
+	</table>
+
+</body>
+</html>

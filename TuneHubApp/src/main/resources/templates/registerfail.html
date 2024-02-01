@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Exist</title>
+</head>
+<body>
+	<h1>User already exist, Try with other mail-id!</h1>
+	<form action="/register" method="post">
+		<fieldset>
+
+			<legend>Create Account</legend>
+			
+			<br/>
+			<label>Username : </label>
+			<input type="text" name="username" required/>
+			<br/><br/>
+			<label>Email ID : </label>
+			<input type="text" name="email" required/>
+			<br/><br/>
+			<label>Password : </label>
+			<input type="password" name="password" required/>
+			<br/><br/>
+			<label>Gender : </label>
+			<input type="radio" name="gender" value="Male" required/>Male
+			<input type="radio" name="gender" value="Female" required/>Female
+			<input type="radio" name="gender" value="Other" required/>Other
+			<br/><br/>
+			<label>Role : </label>
+			<input type="radio" name="role" value="Admin" required/>Admin
+			<input type="radio" name="role" value="User" required/>User
+			<br/><br/>
+			<label>Address : </label>
+			<textarea name="address"></textarea>
+			<br/><br/>
+			<input type="submit" value="Submit"/>
+		</fieldset>	
+	</form>
+</body>
+</html>
